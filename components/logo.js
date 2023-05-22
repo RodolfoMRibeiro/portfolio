@@ -14,17 +14,28 @@ const LogoBox = styled.span`
   padding: 10px;
 
   &:hover img {
+    border-radius: 50%;
+    border: 1px solid #fff;
     transform: rotate(20deg);
   }
 `
 
 const Logo = () => {
+  const imageStyle = {
+    filter: 'invert(100%)'
+  }
   const footPrintImg = `/../public/images/footprint.png`
 
   return (
     <Link href="/">
       <LogoBox>
-        <Image src={footPrintImg} width={20} height={20} alt="logo" />
+        <Image
+          src={footPrintImg}
+          width={20}
+          height={20}
+          alt="logo"
+          style={useColorModeValue(imageStyle, '')}
+        />
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
           fontFamily="M PLUS Rounded 1c"
