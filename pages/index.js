@@ -1,10 +1,8 @@
-import NextLink from 'next/link'
 import {
   Container,
   Box,
   Heading,
   Image,
-  Link,
   useColorModeValue,
   Button
 } from '@chakra-ui/react'
@@ -58,12 +56,7 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             Work
           </Heading>
-          <Paragraph>
-            devo inserir meu texto aqui,{' '}
-            <NextLink href="/works/inkdrop">
-              <Link></Link>Link dos meus jobs
-            </NextLink>
-          </Paragraph>
+          <Paragraph>devo inserir meu texto aqui, </Paragraph>
           <Box align="center" my={4}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My portfolio
