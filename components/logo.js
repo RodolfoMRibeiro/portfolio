@@ -14,8 +14,6 @@ const LogoBox = styled.span`
   padding: 10px;
 
   &:hover img {
-    border-radius: 50%;
-    border: 1px solid #fff;
     transform: rotate(20deg);
   }
 `
