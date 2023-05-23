@@ -1,11 +1,17 @@
+import NextLink from 'next/link'
 import {
   Container,
   Box,
   Heading,
   Image,
-  useColorModeValue
+  Link,
+  useColorModeValue,
+  Button
 } from '@chakra-ui/react'
 import Section from '../components/section'
+import Paragraph from '../components/paragraph'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
   return (
@@ -50,7 +56,38 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
-        <p>Paragraph</p>
+        <Paragraph>
+          devo inserir meu texto aqui,{' '}
+          <NextLink href="/works/inkdrop">
+            <Link></Link>Link dos meus jobs
+          </NextLink>
+        </Paragraph>
+        <Box align="center" my={4}>
+          <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            My portfolio
+          </Button>
+        </Box>
+      </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>2003</BioYear>
+          Born in Ituverava, Brazil.
+        </BioSection>
+        <BioSection>
+          <BioYear>2021</BioYear>
+          Started Learning programming and software engineering at the
+          University of Franca (Uni-FACEF).
+        </BioSection>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          I ♥
+        </Heading>
+        <Paragraph>Read, Play Games (RPG in special) and Music</Paragraph>
       </Section>
     </Container>
   )
