@@ -1,9 +1,9 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInk from './/../public/images/github_logo.png'
-import Layout from '../components/layouts/article'
+import thumbInkdrop from '../public/images/footprint.png'
 
 const Works = () => {
   return (
@@ -13,16 +13,29 @@ const Works = () => {
           Works
         </Heading>
 
-        <SimpleGrid column={[1, 1, 2]} gap={6}>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section>
+            <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
+              A Markdown note-taking app with 100+ plugins, cross-platform and
+              encrypted data sync support
+            </WorkGridItem>
+          </Section>
           <Section>
             <WorkGridItem
-              width={300}
-              id="inkdrop"
-              title="Inkdrop"
-              thumbnail={thumbInk}
+              id="walknote"
+              title="walknote"
+              thumbnail={thumbInkdrop}
             >
-              A markdown note-taking app
+              Music recommendation app for iOS
             </WorkGridItem>
+          </Section>
+
+          <Section delay={0.2}>
+            <Divider my={6} />
+
+            <Heading as="h3" fontSize={20} mb={4}>
+              Collaborations
+            </Heading>
           </Section>
         </SimpleGrid>
       </Container>

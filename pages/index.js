@@ -1,16 +1,35 @@
+import NextLink from 'next/link'
 import {
+  Link,
   Container,
-  Box,
   Heading,
-  Image,
+  Box,
+  Button,
+  List,
+  ListItem,
   useColorModeValue,
-  Button
+  chakra
 } from '@chakra-ui/react'
-import Section from '../components/section'
+import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import Layout from '../components/layouts/article'
-import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
+import Layout from '../components/layouts/article'
+import Section from '../components/section'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import Image from 'next/image'
+
+const ProfileImage = chakra(Image, {
+  shouldForwardProp: prop =>
+    [
+      'width',
+      'height',
+      'src',
+      'alt',
+      'borderColor',
+      'borderWidth',
+      'borderStyle'
+    ].includes(prop)
+})
 
 const Page = () => {
   return (
@@ -31,7 +50,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Rodolfo M Ribeiro
             </Heading>
-            <p>Digital CyberPunk (Developer / Cloud Associate / Reader)</p>
+            <p>Digital Lifestyle (Developer / Cloud Associate)</p>
           </Box>
           <Box
             flexShrink={0}
@@ -39,15 +58,15 @@ const Page = () => {
             ml={{ md: 6 }}
             align="center"
           >
-            <Image
+            <ProfileImage
+              src="/images/rodolfo.jpg"
+              alt="Profile image"
+              borderRadius="full"
+              width="100"
+              height="100"
               borderColor="whiteAlpha.800"
               borderWidth={2}
               borderStyle="solid"
-              maxWidth="100px"
-              display="inline-block"
-              borderRadius="full"
-              src="images/rodolfo.jpg"
-              alt="Profile Image"
             />
           </Box>
         </Box>
@@ -58,7 +77,13 @@ const Page = () => {
           </Heading>
           <Paragraph>devo inserir meu texto aqui, </Paragraph>
           <Box align="center" my={4}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button
+              as={NextLink}
+              href="/works"
+              scroll={false}
+              rightIcon={<ChevronRightIcon />}
+              colorScheme="teal"
+            >
               My portfolio
             </Button>
           </Box>
@@ -83,6 +108,78 @@ const Page = () => {
             I ♥
           </Heading>
           <Paragraph>Read, Play Games (RPG in special) and Music</Paragraph>
+        </Section>
+
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            On the web
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/craftzdog" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoGithub />}
+                >
+                  @craftzdog
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com/inkdrop_app" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoTwitter />}
+                >
+                  @inkdrop_app (English)
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com/craftzdog" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoTwitter />}
+                >
+                  @craftzdog (日本語)
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://instagram.com/craftzdog" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoInstagram />}
+                >
+                  @craftzdog
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
+
+          <Heading as="h3" variant="section-title">
+            Newsletter
+          </Heading>
+          <p>
+            Join me on a behind-the-scenes coding journey. Weekly updates on
+            projects, tutorials, and videos
+          </p>
+
+          <Box align="center" my={4}>
+            <Button
+              as={NextLink}
+              href="https://www.devas.life/"
+              scroll={false}
+              leftIcon={<EmailIcon />}
+              colorScheme="teal"
+            >
+              Sign up my newsletter here
+            </Button>
+          </Box>
         </Section>
       </Container>
     </Layout>
