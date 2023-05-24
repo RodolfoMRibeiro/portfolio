@@ -15,7 +15,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -42,15 +42,15 @@ const Page = () => {
           p={3}
           align="center"
         >
-          Hello, I&apos;m a full-stack developer based in Brazil!
+          Hello, I&apos;m a full-cycle developer based in Brazil!
         </Box>
 
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Rodolfo M Ribeiro
+              Rodolfo M. Ribeiro
             </Heading>
-            <p>Digital Lifestyle (Developer / Cloud Associate)</p>
+            <p>Software Enginner | Cloud Associated</p>
           </Box>
           <Box
             flexShrink={0}
@@ -75,7 +75,16 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             Work
           </Heading>
-          <Paragraph>devo inserir meu texto aqui, </Paragraph>
+          <Paragraph>
+            Rodolfo is a full-cycle software engineer and cloud associate based
+            in Brazil, with a passion for building scalable and reliable
+            systems. He possesses a strong background in developing,
+            maintaining, and deploying payment systems and programs. When he&apos;s
+            not online, he enjoys reading a wide range of books, from
+            captivating RPGs to informative technical literature. Currently, his
+            focus lies in exploring cloud solutions and their practical
+            applications in solving real-life problems.
+          </Paragraph>
           <Box align="center" my={4}>
             <Button
               as={NextLink}
@@ -98,8 +107,17 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2021</BioYear>
-            Started Learning programming and software engineering at the
+            Started a formal education in the field of programming at the
             University of Franca (Uni-FACEF).
+          </BioSection>
+          <BioSection>
+            <BioYear>2022</BioYear>
+             Started working as a software engineer intern at an Great E-commerce Company - {' '} 
+             <Link href='https://www.irroba.com.br'>Irroba</Link>
+          </BioSection>
+          <BioSection>
+            <BioYear>2022 - Current</BioYear>
+            Started Working as a Golang Software Enginner at {' '}<Link href='https://quero2pay.com.br/'>Q2Bank</Link>.
           </BioSection>
         </Section>
 
@@ -116,53 +134,34 @@ const Page = () => {
           </Heading>
           <List>
             <ListItem>
-              <Link href="https://github.com/craftzdog" target="_blank">
+              <Link href="https://github.com/RodolfoMRibeiro" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<IoLogoGithub />}
                 >
-                  @craftzdog
+                  @RodolfoMRibeiro
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://twitter.com/inkdrop_app" target="_blank">
+              <Link
+                href="https://www.linkedin.com/in/rodolfomr"
+                target="_blank"
+              >
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  leftIcon={<IoLogoTwitter />}
+                  leftIcon={<IoLogoLinkedin />}
                 >
-                  @inkdrop_app (English)
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link href="https://twitter.com/craftzdog" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<IoLogoTwitter />}
-                >
-                  @craftzdog (日本語)
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link href="https://instagram.com/craftzdog" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<IoLogoInstagram />}
-                >
-                  @craftzdog
+                  @RodolfoMRibeiro
                 </Button>
               </Link>
             </ListItem>
           </List>
 
           <Heading as="h3" variant="section-title">
-            Newsletter
+            Best Part
           </Heading>
           <p>
             Join me on a behind-the-scenes coding journey. Weekly updates on
@@ -172,12 +171,12 @@ const Page = () => {
           <Box align="center" my={4}>
             <Button
               as={NextLink}
-              href="https://www.devas.life/"
+              href="https://rodolfomarqribeiro@gmail.com"
               scroll={false}
               leftIcon={<EmailIcon />}
               colorScheme="teal"
             >
-              Sign up my newsletter here
+              Send me a message
             </Button>
           </Box>
         </Section>
