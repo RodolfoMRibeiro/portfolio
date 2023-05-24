@@ -133,7 +133,9 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             I ♥
           </Heading>
-          <Paragraph>Read, Play Games (RPG in special) and Music</Paragraph>
+          <Paragraph>
+            Reading, Playing Games, Music, Learn Languages (Currently Japanese)
+          </Paragraph>
         </Section>
 
         <Section delay={0.3}>
@@ -169,11 +171,11 @@ const Page = () => {
           </List>
 
           <Heading as="h3" variant="section-title">
-            Best Part
+            An Invite to you
           </Heading>
           <p>
-            Join me on a behind-the-scenes coding journey. Weekly updates on
-            projects, tutorials, and videos
+            Why don&apos;t you join me on a behind-the-scenes coding journey?
+            Give me a shout and let&apos;s talk!
           </p>
 
           <Box align="center" my={4}>
