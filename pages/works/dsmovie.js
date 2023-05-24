@@ -27,7 +27,6 @@ const Work = () => (
           <span>Java Spring Boot, React, Typescript</span>
         </ListItem>
       </List>
-
       <WorkImage src="/images/works/dsmovie.png" alt="Homepage" />
     </Container>
   </Layout>

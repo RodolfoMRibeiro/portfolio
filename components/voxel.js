@@ -12,9 +12,7 @@ const VoxelDog = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlDogGLB =
-    (process.env.NODE_ENV === 'production' ? 'add something here' : '') +
-    '/dog.glb'
+  const urlDogGLB = '/dog.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer

@@ -16,8 +16,8 @@ const Works = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem id="dsmovie" title="dsmovie" thumbnail={thumbInkdrop}>
-              A movie-classification web app to save users&apos; opnions, comments and
-              classify movies according to then.
+              A movie-classification web app to save users&apos; opnions,
+              comments and classify movies according to then.
             </WorkGridItem>
           </Section>
           <Section>

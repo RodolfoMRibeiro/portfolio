@@ -22,7 +22,7 @@ const Logo = () => {
   const imageStyle = {
     filter: 'invert(100%)'
   }
-  const footPrintImg = `/../public/images/footprint.png`
+  const footPrintImg = `/images/footprint.png`
 
   return (
     <Link href="/">
