@@ -79,8 +79,8 @@ const Page = () => {
             Rodolfo is a full-cycle software engineer and cloud associate based
             in Brazil, with a passion for building scalable and reliable
             systems. He possesses a strong background in developing,
-            maintaining, and deploying payment systems and programs. When he&apos;s
-            not online, he enjoys reading a wide range of books, from
+            maintaining, and deploying payment systems and programs. When
+            he&apos;s not online, he enjoys reading a wide range of books, from
             captivating RPGs to informative technical literature. Currently, his
             focus lies in exploring cloud solutions and their practical
             applications in solving real-life problems.
@@ -107,17 +107,25 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2021</BioYear>
-            Started a formal education in the field of programming at the
-            University of Franca (Uni-FACEF).
+            Started a formal education as a software enginner at the University
+            of Franca (Uni-FACEF).
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
-             Started working as a software engineer intern at an Great E-commerce Company - {' '} 
-             <Link href='https://www.irroba.com.br'>Irroba</Link>
+            Started working as a PHP software engineer intern at a prestigious
+            E-commerce company called{' '}
+            <Link href="https://www.irroba.com.br" target="_blank">
+              Irroba
+            </Link>
           </BioSection>
           <BioSection>
-            <BioYear>2022 - Current</BioYear>
-            Started Working as a Golang Software Enginner at {' '}<Link href='https://quero2pay.com.br/'>Q2Bank</Link>.
+            <BioYear>2022</BioYear>
+            Started working as a Golang Software Engineer at{' '}
+            <Link href="https://quero2pay.com.br/" target="_blank">
+              Q2Bank
+            </Link>
+            , where I developed a a deep passion for cloud solutions and DevOps
+            emerged.
           </BioSection>
         </Section>
 
