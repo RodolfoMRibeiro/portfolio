@@ -19,14 +19,6 @@ This project aims to create a visually stunning and informative personal portfol
 
 - **About Me**: A comprehensive "About Me" section will allow visitors to delve into my background, experiences, and the driving forces behind my passion for programming. This section will foster a personal connection and provide insight into my professional journey.
 
-## Screenshots
-<p align="center">
-    <img src="/images/portfolio_screenshot_1.png" alt="Portfolio Screenshot 1" width="600">
-</p>
-<p align="center">
-    <img src="/images/portfolio_screenshot_2.png" alt="Portfolio Screenshot 2" width="600">
-</p>
-
 ## Installation
 1. Clone the repository: `git clone https://github.com/RodolfoMRibeiro/portfolio.git`
 2. Install the necessary dependencies: `npm install`
