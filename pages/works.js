@@ -3,7 +3,8 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/dsmovie.png'
+import thumbDSMovie from '../public/images/works/dsmovie.png'
+import thumbAngolist from '../public/images/works/angolist.png'
 
 const Works = () => {
   return (
@@ -15,29 +16,26 @@ const Works = () => {
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
-            <WorkGridItem id="dsmovie" title="dsmovie" thumbnail={thumbInkdrop}>
+            <WorkGridItem id="dsmovie" title="DSMovie" thumbnail={thumbDSMovie}>
               A movie-classification web app to save users&apos; opnions,
               comments and classify movies according to then.
             </WorkGridItem>
           </Section>
+
           <Section>
             <WorkGridItem
-              id="walknote"
-              title="walknote"
-              thumbnail={thumbInkdrop}
+              id="angolist"
+              title="Angolist"
+              thumbnail={thumbAngolist}
             >
-              Music recommendation app for iOS
+              A mobile application designed to assist UI/UX designers in
+              evaluating their work based on Nielsen&apos;s heuristic
+              principles.
             </WorkGridItem>
           </Section>
-
-          <Section delay={0.2}>
-            <Divider my={6} />
-
-            <Heading as="h3" fontSize={20} mb={4}>
-              Collaborations
-            </Heading>
-          </Section>
         </SimpleGrid>
+
+        <Divider mt={4} />
       </Container>
     </Layout>
   )
