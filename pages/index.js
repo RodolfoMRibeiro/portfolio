@@ -181,7 +181,7 @@ const Page = () => {
           <Box align="center" my={4}>
             <Button
               as={NextLink}
-              href="https://rodolfomarqribeiro@gmail.com"
+              href="mailto:rodolfomarqribeiro@gmail.com"
               scroll={false}
               leftIcon={<EmailIcon />}
               colorScheme="teal"
