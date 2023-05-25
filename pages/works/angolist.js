@@ -27,7 +27,7 @@ const Work = () => (
           <span>React Native, Typescript, Node.js, Prisma</span>
         </ListItem>
       </List>
-      <WorkImage src="/images/works/dsmovie.png" alt="Homepage" />
+      <WorkImage src="/images/works/angolist.png" alt="Homepage" />
     </Container>
   </Layout>
 )
