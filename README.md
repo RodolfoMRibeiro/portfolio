@@ -1,8 +1,8 @@
 <p align="center">
-    <img src="portfolio_banner.png" alt="Portfolio Banner">
+    <img src="./public/images/portfolio/portfolio_homepage.png" alt="Portfolio Banner">
 </p>
 
-<h1 align="center">Personal Portfolio Inspired by Takuya Matsuyama (松山拓也)</h1>
+<h1 align="center">Personal Portfolio</h1>
 
 ## Introduction
 Ever since I started my programming journey, I've been captivated by the power of the internet and the ability to share my knowledge and experiences with people around the world. Inspired by the incredible work of the esteemed master Takuya Matsuyama (松山拓也), I embarked on creating my own personal portfolio to showcase my skills and personality.
@@ -21,14 +21,14 @@ This project aims to create a visually stunning and informative personal portfol
 
 ## Screenshots
 <p align="center">
-    <img src="portfolio_screenshot_1.png" alt="Portfolio Screenshot 1" width="600">
+    <img src="/images/portfolio_screenshot_1.png" alt="Portfolio Screenshot 1" width="600">
 </p>
 <p align="center">
-    <img src="portfolio_screenshot_2.png" alt="Portfolio Screenshot 2" width="600">
+    <img src="/images/portfolio_screenshot_2.png" alt="Portfolio Screenshot 2" width="600">
 </p>
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/yourusername/your-portfolio.git`
+1. Clone the repository: `git clone https://github.com/RodolfoMRibeiro/portfolio.git`
 2. Install the necessary dependencies: `npm install`
 3. Customize the portfolio with your own content and images.
 4. Build the project: `npm run build`
