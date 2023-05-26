@@ -59,7 +59,7 @@ const Page = () => {
             align="center"
           >
             <ProfileImage
-              src="/images/rodolfo.jpg"
+              src="/images/rodolfo.png"
               alt="Profile image"
               borderRadius="full"
               width="100"
