@@ -20,7 +20,26 @@ This project aims to create a visually stunning and informative personal portfol
 - **Skills and Projects Showcase**: A dedicated section will showcase my technical skills. I will also highlight my past projects (also those in development), and job experience.
 
 - **About Me**: A comprehensive "About Me" section will allow visitors to delve into my background, experiences, and the driving forces behind my passion for programming. This section will foster a personal connection and provide insight into my professional journey.
+## Stack
 
+- [Next.js](https://nextjs.org/) - A React framework with hybrid static & server rendering, and route pre-fetching, etc.
+- [Chakra UI](https://chakra-ui.com/) - A simple, modular and accessible component library for React
+- [Three.js](https://threejs.org/) - 3D library for JavaScript
+- [Framer Motion](https://www.framer.com/motion/) - An animation library for React
+
+## Project structure
+
+```
+$PROJECT_ROOT
+│   # Page files
+├── pages
+│   # React component files
+├── components
+│   # Non-react modules
+├── lib
+│   # Static files for images and 3d model file
+└── public
+```
 ## Installation
 1. Clone the repository: `git clone https://github.com/RodolfoMRibeiro/portfolio.git`
 2. Install the necessary dependencies: `npm install`
