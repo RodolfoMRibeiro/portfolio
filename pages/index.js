@@ -124,8 +124,7 @@ const Page = () => {
             <Link href="https://quero2pay.com.br/" target="_blank">
               Q2Bank
             </Link>
-            , where I developed a a deep passion for cloud solutions and DevOps
-            emerged.
+            , where he developed a deep passion for Cloud Solutions and DevOps.
           </BioSection>
         </Section>
 
