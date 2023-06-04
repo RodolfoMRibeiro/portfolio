@@ -15,7 +15,7 @@ const Works = () => {
           Works
         </Heading>
 
-        <SimpleGrid columns={[1, 1, 1]}>
+        <SimpleGrid columns={[1, 1, 1]} gap={2}>
           <Section>
             <WorkGridItem id="ddos" title="DDOS FLOOD" thumbnail={thumbDDOS}>
               A command-line interface application to perform DDoS (Distributed
@@ -23,9 +23,7 @@ const Works = () => {
               threads.
             </WorkGridItem>
           </Section>
-        </SimpleGrid>
 
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem id="dsmovie" title="DSMovie" thumbnail={thumbDSMovie}>
               A movie-classification web app to save users&apos; opnions,
@@ -46,7 +44,7 @@ const Works = () => {
           </Section>
         </SimpleGrid>
 
-        <Divider mt={4} />
+        <Divider mt={3} />
       </Container>
     </Layout>
   )
