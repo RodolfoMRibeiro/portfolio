@@ -18,8 +18,8 @@ const Works = () => {
         <SimpleGrid columns={[1, 1, 1]} gap={2}>
           <Section>
             <WorkGridItem id="ddos" title="DDOS FLOOD" thumbnail={thumbDDOS}>
-              A command-line interface application to perform DDoS (Distributed
-              Denial of Service) given a web page and the number of concurrent
+              A command-line interface application to perform Distributed Denial
+              of Service (DDos) given a web page and the number of concurrent
               threads.
             </WorkGridItem>
           </Section>
