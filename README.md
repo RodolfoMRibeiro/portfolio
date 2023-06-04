@@ -68,3 +68,5 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 Created with ❤️ by [Rodolfo Marques Ribeiro](https://portfolio-chi-five-21.vercel.app/)
+<br>
+Inspired by Takuya Matsuyama (松山拓也)
