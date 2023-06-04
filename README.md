@@ -1,14 +1,12 @@
 <p align="center">
     <img src="./public/images/portfolio/portfolio_homepage.png" alt="Portfolio Banner">
-    <br>
-    <span style="font-weight: bold;">This dog was made by the great master Takuya Matsuyama (松山拓也), who I admire</span>
 </p>
 
 <h1 align="center">Personal Portfolio</h1>
 
 ## Introduction
 
-Ever since I started my programming journey, I've been captivated by the power of the internet and the ability to share my knowledge and experiences with people around the world. Inspired by the esteemed master <a href='https://github.com/craftzdog'>Takuya Matsuyama (松山拓也)</a>, I embarked on creating my own personal portfolio to showcase my skills and personality.
+Ever since I started my programming journey, I've been captivated by the power of the internet and the ability to share my knowledge and experiences with people around the world. Inspired by great people, I embarked on creating my own personal portfolio to showcase my skills and personality.
 
 ## Project Overview
 
