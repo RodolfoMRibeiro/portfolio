@@ -25,9 +25,9 @@ const ProfileImage = chakra(Image, {
       'height',
       'src',
       'alt',
-      'borderColor',
-      'borderWidth',
-      'borderStyle'
+      'bordercolor',
+      'borderwidth',
+      'borderstyle'
     ].includes(prop)
 })
 
