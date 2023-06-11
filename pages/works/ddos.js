@@ -11,7 +11,7 @@ import Layout from '../../components/layouts/article'
 import Blockquote from '../../components/blockquote'
 
 const Work = () => (
-  <Layout title="">
+  <Layout title="DDoS">
     <Container>
       <Title>
         Distributed Denial of Service (DDoS) <Badge>2023-2023</Badge>
