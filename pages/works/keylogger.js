@@ -14,12 +14,13 @@ const Work = () => (
   <Layout title="Keylogger">
     <Container>
       <Title>
-        Distributed Denial of Service (DDoS) <Badge>2023-2023</Badge>
+        Windows Keylogger <Badge>IN DEVELOPMENT</Badge>
       </Title>
       <P>
-        A command-line interface application to perform DDoS (Distributed Denial
-        of Service) given a web page and the number of concurrent threads.
+        A windows-based application that runs in stealth mode and get keystrokes
+        from any keyboard.
       </P>
+      <P>All the log information will be saved to a file in a given path.</P>
       <Blockquote style={{ color: useColorModeValue('#444', '#888') }}>
         <p>
           &quot;I wholeheartedly embrace the ethos of open source code and the
@@ -30,11 +31,11 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Platform</Meta>
-          <span>Linux,Windows,Macintosh</span>
+          <span>Windows</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Golang</span>
+          <span>Golang, Windows API, DLL</span>
         </ListItem>
       </List>
       <WorkImage src="/images/works/keylogger.png" alt="Homepage" />
