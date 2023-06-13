@@ -3,12 +3,14 @@ import {
   Badge,
   List,
   ListItem,
-  useColorModeValue
+  useColorModeValue,
+  Link
 } from '@chakra-ui/react'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import Blockquote from '../../components/blockquote'
+import NextLink from 'next/link'
 
 const Work = () => (
   <Layout title="DDoS">
@@ -35,6 +37,16 @@ const Work = () => (
         <ListItem>
           <Meta>Stack</Meta>
           <span>Golang</span>
+        </ListItem>
+        <ListItem>
+          <Meta>Git hub</Meta>
+          <Link
+            as={NextLink}
+            target="_blank"
+            href="https://github.com/RodolfoMRibeiro/DDOS-FLOOD"
+          >
+            DDoS-Flood
+          </Link>
         </ListItem>
       </List>
       <WorkImage src="/images/works/ddos.png" alt="Homepage" />

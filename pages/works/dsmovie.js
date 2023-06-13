@@ -1,7 +1,8 @@
-import { Container, Badge, List, ListItem } from '@chakra-ui/react'
+import { Container, Badge, List, ListItem, Link } from '@chakra-ui/react'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
+import NextLink from 'next/link'
 
 const Work = () => (
   <Layout title="DSMovie">
@@ -25,6 +26,16 @@ const Work = () => (
         <ListItem>
           <Meta>Stack</Meta>
           <span>Java Spring Boot, React, Typescript</span>
+        </ListItem>
+        <ListItem>
+          <Meta>Git hub</Meta>
+          <Link
+            as={NextLink}
+            target="_blank"
+            href="https://github.com/RodolfoMRibeiro/DSMOVIE"
+          >
+            DSMovie
+          </Link>
         </ListItem>
       </List>
       <WorkImage src="/images/works/dsmovie.png" alt="Homepage" />
