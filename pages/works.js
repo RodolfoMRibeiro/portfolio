@@ -3,6 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
+import thumbKeylogger from '../public/images/works/keylogger.png'
 import thumbDDOS from '../public/images/works/ddos.png'
 import thumbDSMovie from '../public/images/works/dsmovie.png'
 import thumbAngolist from '../public/images/works/angolist.png'
@@ -15,19 +16,22 @@ const Works = () => {
           Works
         </Heading>
 
-        <SimpleGrid columns={[1, 1, 1]} gap={2}>
-          <Section>
-            <WorkGridItem id="ddos" title="DDOS FLOOD" thumbnail={thumbDDOS}>
-              A command-line interface application to perform Distributed Denial
-              of Service (DDos) given a web page and the number of concurrent
-              threads.
-            </WorkGridItem>
-          </Section>
-
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem id="dsmovie" title="DSMovie" thumbnail={thumbDSMovie}>
               A movie-classification web app to save users&apos; opnions,
               comments and classify movies according to then.
+            </WorkGridItem>
+          </Section>
+
+          <Section>
+            <WorkGridItem
+              id="keylogger"
+              title="Keylogger"
+              thumbnail={thumbKeylogger}
+            >
+              A windows-based application that runs in stealth mode and get
+              keystrokes from any keyboard
             </WorkGridItem>
           </Section>
 
@@ -42,8 +46,15 @@ const Works = () => {
               principles.
             </WorkGridItem>
           </Section>
-        </SimpleGrid>
 
+          <Section>
+            <WorkGridItem id="ddos" title="DDOS FLOOD" thumbnail={thumbDDOS}>
+              A command-line interface application to perform Distributed Denial
+              of Service (DDos) given a web page and the number of concurrent
+              threads.
+            </WorkGridItem>
+          </Section>
+        </SimpleGrid>
         <Divider mt={3} />
       </Container>
     </Layout>
