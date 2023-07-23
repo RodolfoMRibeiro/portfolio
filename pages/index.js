@@ -133,7 +133,7 @@ const Page = () => {
             I ♥
           </Heading>
           <Paragraph>
-            Reading, Playing Games, Music, Learn Languages (Currently Japanese)
+            Reading, Playing Games, Music, Learn Languages (Currently Japanese 日本語)
           </Paragraph>
         </Section>
 
