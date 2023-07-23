@@ -13,12 +13,12 @@ const NotFound = () => {
   const { t } = useTranslation('common');
   return (
     <Container>
-      <Heading as="h1">Not found</Heading>
-      <Text>The page you&apos;re looking for was not found.</Text>
+      <Heading as="h1">{t('not_found')}</Heading>
+      <Text>{t('not_found_description')}</Text>
       <Divider my={6} />
       <Box my={6} align="center">
         <Button as={NextLink} href="/" colorScheme="teal">
-          Return to home
+          {t('return_home')}
         </Button>
       </Box>
     </Container>
