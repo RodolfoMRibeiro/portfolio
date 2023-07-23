@@ -3,7 +3,6 @@ import Layout from '../components/layouts/main'
 import Fonts from '../components/fonts'
 import theme from '../lib/theme'
 import { AnimatePresence } from 'framer-motion'
-import { appWithTranslation } from 'next-translate';
 
 const Website = ({ Component, pageProps, router }) => {
   return (
@@ -18,4 +17,4 @@ const Website = ({ Component, pageProps, router }) => {
   )
 }
 
-export default appWithTranslation(Website);
+export default Website

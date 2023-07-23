@@ -1,15 +1,5 @@
-// next.config.js
-const { nextI18NextRewrites } = require('next-i18next/rewrites');
+const nextTranslate = require('next-translate-plugin')
 
-const localeSubpaths = {
-  en: 'en',
-  jpn: 'jpn',
-  pt: 'pt',
-};
-
-module.exports = {
-  rewrites: async () => nextI18NextRewrites(localeSubpaths),
-  publicRuntimeConfig: {
-    localeSubpaths,
-  },
-};
+module.exports = nextTranslate({
+    reactStrictMode: true,
+  });

@@ -2,6 +2,7 @@ import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
+import useTranslation from 'next-translate/useTranslation';
 
 import thumbKeylogger from '../public/images/works/keylogger.png'
 import thumbDDOS from '../public/images/works/ddos.png'
@@ -9,18 +10,19 @@ import thumbDSMovie from '../public/images/works/dsmovie.png'
 import thumbAngolist from '../public/images/works/angolist.png'
 
 const Works = () => {
+  const { t } = useTranslation('common')
+
   return (
     <Layout>
       <Container>
         <Heading as="h3" fontSize={20} mb={4}>
-          Works
+          {t('works')}
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem id="dsmovie" title="DSMovie" thumbnail={thumbDSMovie}>
-              A movie-classification web app to save users&apos; opnions,
-              comments and classify movies according to then.
+              {t('dsmovie_description')}
             </WorkGridItem>
           </Section>
 
@@ -30,8 +32,7 @@ const Works = () => {
               title="KeySense"
               thumbnail={thumbKeylogger}
             >
-              A windows-based application that runs in stealth mode and get
-              keystrokes from any keyboard
+              {t('keysense_description')}
             </WorkGridItem>
           </Section>
 
@@ -41,17 +42,13 @@ const Works = () => {
               title="Angolist"
               thumbnail={thumbAngolist}
             >
-              A mobile application designed to assist UI/UX designers in
-              evaluating their work based on Nielsen&apos;s heuristic
-              principles.
+              {t('angolist_description')}
             </WorkGridItem>
           </Section>
 
           <Section>
             <WorkGridItem id="ddos" title="DDOS FLOOD" thumbnail={thumbDDOS}>
-              A command-line interface application to perform Distributed Denial
-              of Service (DDos) given a web page and the number of concurrent
-              threads.
+              {t('ddos_flood_description')}
             </WorkGridItem>
           </Section>
         </SimpleGrid>

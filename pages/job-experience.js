@@ -11,47 +11,41 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { BioSection, BioYear, OpeningTitle } from '../components/bio'
 import { MdCheckCircle } from 'react-icons/md'
+import useTranslation from 'next-translate/useTranslation';
 
 import Paragraph from '../components/paragraph'
 
 const JobExperience = () => {
+  const { t } = useTranslation('common')
+
   return (
     <Layout>
       <Container>
         <Section delay={0.2}>
           <Heading as="h3" fontSize={20} mb={4}>
-            Job Experience
+            {t('job_experience')}
           </Heading>
           <BioSection ml={-4}>
             <BioYear ml={5}>
               <Link href="https://quero2pay.com.br/" target="_blank">
                 Q2Bank
               </Link>{' '}
-              - Software Engineer
+              - {t('q2bank_experience')}
             </BioYear>
-            <Paragraph>
-              As a sofware enginner, Rodolfo had the privilege of making
-              significant contributions to the upkeep and improvement of various
-              payment microservices, providing valuable insights and expertise.
-            </Paragraph>
-            <OpeningTitle>NOTABLE ACOMPLISHMENTS</OpeningTitle>
+            <Paragraph>{t('q2bank_accomplishments')}</Paragraph>
+            <OpeningTitle>{t('q2bank_accomplishment_1')}</OpeningTitle>
             <List spacing={3} ml={50}>
               <ListItem textAlign="justify">
                 <ListIcon as={MdCheckCircle} color="green.500" />
-                Developed scalable payment microservices in Go for handling
-                large transaction volumes, processing over R$4 million per
-                month.
+                {t('q2bank_accomplishment_1')}
               </ListItem>
               <ListItem textAlign="justify">
                 <ListIcon as={MdCheckCircle} color="green.500" />
-                Designed and implemented an internal library to standardize and
-                centralize dependencies for new projects, ensuring consistency
-                and efficiency.
+                {t('q2bank_accomplishment_2')}
               </ListItem>
               <ListItem textAlign="justify">
                 <ListIcon as={MdCheckCircle} color="green.500" />
-                Utilized pg_cron in Amazon RDS for implementing automated
-                procedures.
+                {t('q2bank_accomplishment_3')}
               </ListItem>
             </List>
           </BioSection>
@@ -65,28 +59,18 @@ const JobExperience = () => {
               <Link href="https://www.irroba.com.br/" target="_blank">
                 Irroba
               </Link>{' '}
-              - Software Engineer Intern
+              - {t('irroba_experience')}
             </BioYear>
-            <Paragraph>
-              That marked my initial hands-on with the programming field,
-              wherein I acquired significant expertise in conducting tests and
-              ensuring high-quality standards. Within my role, I verified the
-              proper functionality of the software application&apos;s
-              server-side components and ensured their compliance
-            </Paragraph>
-            <OpeningTitle>NOTABLE ACOMPLISHMENTS</OpeningTitle>
+            <Paragraph>{t('irroba_accomplishments')}</Paragraph>
+            <OpeningTitle>{t('irroba_accomplishment_1')}</OpeningTitle>
             <List spacing={3} ml={50}>
               <ListItem textAlign="justify">
                 <ListIcon as={MdCheckCircle} color="green.500" />
-                cultivated the ability to discern between errors and business
-                rules when confronted with a wide range of options within a
-                major e-commerce player.
+                {t('irroba_accomplishment_1')}
               </ListItem>
               <ListItem textAlign="justify">
                 <ListIcon as={MdCheckCircle} color="green.500" />
-                Through reorganizing and streamlining delivery methods on the
-                platform, I deepened my understanding of the key elements that
-                truly add value to the company.
+                {t('irroba_accomplishment_2')}
               </ListItem>
             </List>
           </BioSection>
