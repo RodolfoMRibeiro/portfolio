@@ -27,7 +27,7 @@ const Works = () => {
           <Section>
             <WorkGridItem
               id="keylogger"
-              title="Keylogger"
+              title="KeySense"
               thumbnail={thumbKeylogger}
             >
               A windows-based application that runs in stealth mode and get

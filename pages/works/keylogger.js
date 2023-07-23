@@ -16,7 +16,7 @@ const Work = () => (
   <Layout title="Keylogger">
     <Container>
       <Title>
-        Windows Keylogger <Badge>IN DEVELOPMENT</Badge>
+        KeySense <Badge>2023-2023</Badge>
       </Title>
       <P>
         A windows-based application that runs in stealth mode and get keystrokes
@@ -37,14 +37,14 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Golang, Windows API, DLL</span>
+          <span>C++, Windows API, DLL</span>
         </ListItem>
         <ListItem>
           <Meta>Git hub</Meta>
           <Link
             as={NextLink}
             target="_blank"
-            href="https://github.com/RodolfoMRibeiro/Keylogger"
+            href="https://github.com/RodolfoMRibeiro/KeySense"
           >
             Keylogger
           </Link>
