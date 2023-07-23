@@ -1,0 +1,14 @@
+{
+  "title": "KeySense",
+  "date": "2023-2023",
+  "description": "Um aplicativo baseado em Windows que roda em modo furtivo e captura pressionamentos de teclas de qualquer teclado.",
+  "logInfo": "Todas as informações do registro serão salvas em um arquivo em um caminho especificado.",
+  "quote": "\"Eu abraço sinceramente a ética do código aberto e o espírito de compartilhamento de conhecimento, com a sincera esperança de que seja usado para o bem e nunca de forma indevida\" - Rodolfo Marques",
+  "platform": "Plataforma",
+  "platformValue": "Windows",
+  "stack": "Tecnologias",
+  "stackValue": "C++, Windows API, DLL",
+  "github": "GitHub",
+  "githubLink": "Keylogger",
+  "imageAlt": "Página Inicial"
+}

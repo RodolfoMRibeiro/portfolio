@@ -1,0 +1,14 @@
+{
+    "title": "Angolist",
+    "date": "開発中",
+    "description": "Angolistは、UI/UXデザイナーがNielsenのヒューリスティック原則に基づいて作業を評価するのを支援するモバイルアプリケーションです。",
+    "developmentMessage": "このアプリケーションは現在開発中です。しばらくお待ちください...",
+    "platform": "プラットフォーム",
+    "platformValue": "iOS/Android",
+    "stack": "スタック",
+    "stackValue": "React Native, Typescript, Node.js, Prisma",
+    "github": "GitHub",
+    "githubLink": "Angolist",
+    "imageAlt": "ホームページ"
+}
+  

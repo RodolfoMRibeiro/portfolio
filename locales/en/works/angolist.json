@@ -1,0 +1,14 @@
+{
+    "title": "Angolist",
+    "date": "IN DEVELOPMENT",
+    "description": "A mobile application designed to assist UI/UX designers in evaluating their work based on Nielsen's heuristic principles.",
+    "developmentMessage": "This application is still under development. You might need to wait a little bit...",
+    "platform": "Platform",
+    "platformValue": "iOS/Android",
+    "stack": "Stack",
+    "stackValue": "React Native, Typescript, Node.js, Prisma",
+    "github": "GitHub",
+    "githubLink": "Angolist",
+    "imageAlt": "Homepage"
+}
+  
