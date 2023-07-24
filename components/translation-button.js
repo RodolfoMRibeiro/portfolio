@@ -46,10 +46,6 @@ const TranslationButton = () => {
         </MenuList>
       </Menu>
     </Box>
-    // <div>
-    //   <button onClick={() => handleLanguageChange('en')}>English</button>
-    //   <button onClick={() => handleLanguageChange('fr')}>Français</button>
-    // </div>
   )
 }
 
