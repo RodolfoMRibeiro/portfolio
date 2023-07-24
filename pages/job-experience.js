@@ -11,7 +11,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { BioSection, BioYear, OpeningTitle } from '../components/bio'
 import { MdCheckCircle } from 'react-icons/md'
-import useTranslation from 'next-translate/useTranslation';
+import useTranslation from 'next-translate/useTranslation'
 
 import Paragraph from '../components/paragraph'
 

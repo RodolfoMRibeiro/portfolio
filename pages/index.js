@@ -17,7 +17,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import Image from 'next/image'
-import useTranslation from 'next-translate/useTranslation';
+import useTranslation from 'next-translate/useTranslation'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop =>

@@ -1,14 +1,13 @@
 {
-    "title": "Dev Superior Movie (DSMovie)",
-    "date": "2022年〜2023年",
-    "description": "DSMovieは、ユーザーの意見やコメントを保存し、映画を分類する映画分類ウェブアプリです。Spring BootとReact Typescriptで作成されています。",
-    "closingMessage": "このサイトは閉鎖されました。サポートしてくださったすべての方に感謝いたします！",
-    "platform": "プラットフォーム",
-    "platformValue": "Web",
-    "stack": "スタック",
-    "stackValue": "Java Spring Boot, React, Typescript",
-    "github": "GitHub",
-    "githubLink": "DSMovie",
-    "imageAlt": "ホームページ"
+  "title": "Dev Superior Movie (DSMovie)",
+  "date": "2022年〜2023年",
+  "description": "DSMovieは、ユーザーの意見やコメントを保存し、映画を分類する映画分類ウェブアプリです。Spring BootとReact Typescriptで作成されています。",
+  "closingMessage": "このサイトは閉鎖されました。サポートしてくださったすべての方に感謝いたします！",
+  "platform": "プラットフォーム",
+  "platformValue": "Web",
+  "stack": "スタック",
+  "stackValue": "Java Spring Boot, React, Typescript",
+  "github": "GitHub",
+  "githubLink": "DSMovie",
+  "imageAlt": "ホームページ"
 }
-  

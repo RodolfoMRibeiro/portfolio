@@ -1,13 +1,13 @@
 {
-    "title": "Angolist",
-    "date": "В РАЗРАБОТКЕ",
-    "description": "Мобильное приложение, разработанное для помощи дизайнерам пользовательского интерфейса (UI) и пользовательского опыта (UX) в оценке своей работы на основе эвристических принципов Нильсена.",
-    "developmentMessage": "Это приложение все еще находится в разработке. Вам, возможно, придется немного подождать...",
-    "platform": "Платформа",
-    "platformValue": "iOS/Android",
-    "stack": "Стек",
-    "stackValue": "React Native, Typescript, Node.js, Prisma",
-    "github": "GitHub",
-    "githubLink": "Angolist",
-    "imageAlt": "Главная страница"
+  "title": "Angolist",
+  "date": "В РАЗРАБОТКЕ",
+  "description": "Мобильное приложение, разработанное для помощи дизайнерам пользовательского интерфейса (UI) и пользовательского опыта (UX) в оценке своей работы на основе эвристических принципов Нильсена.",
+  "developmentMessage": "Это приложение все еще находится в разработке. Вам, возможно, придется немного подождать...",
+  "platform": "Платформа",
+  "platformValue": "iOS/Android",
+  "stack": "Стек",
+  "stackValue": "React Native, Typescript, Node.js, Prisma",
+  "github": "GitHub",
+  "githubLink": "Angolist",
+  "imageAlt": "Главная страница"
 }

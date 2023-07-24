@@ -7,10 +7,10 @@ import {
   Divider,
   Button
 } from '@chakra-ui/react'
-import useTranslation from 'next-translate/useTranslation';
+import useTranslation from 'next-translate/useTranslation'
 
 const NotFound = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation('common')
   return (
     <Container>
       <Heading as="h1">{t('not_found')}</Heading>
