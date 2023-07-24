@@ -44,5 +44,10 @@
   "navbar_work": "Works",
   "navbar_job_experience": "Job Experience",
   "navbar_source_full_width": "Source",
-  "navbar_source_mobile_width": "View Source"
+  "navbar_source_mobile_width": "View Source",
+  "lable_english": "English",
+  "lable_french": "French",
+  "lable_russian": "Russian",
+  "lable_japanese": "Japanese",
+  "lable_portuguese": "Portuguese"
 }

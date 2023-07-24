@@ -22,7 +22,7 @@ const TranslationButton = () => {
     { lang: 'en', lable: t('lable_english') },
     { lang: 'ru', lable: t('lable_russian') },
     { lang: 'ja', lable: t('lable_japanese') },
-    { lang: 'pt', lable: t('lable_portuguese') },
+    { lang: 'pt', lable: t('lable_portuguese') }
   ]
 
   return (
@@ -37,7 +37,7 @@ const TranslationButton = () => {
         <MenuList>
           {languages.map(language => (
             <MenuItem
-              key={language.lable}
+              key={language.lang}
               onClick={() => handleLanguageChange(language.lang)}
             >
               {language.lable}

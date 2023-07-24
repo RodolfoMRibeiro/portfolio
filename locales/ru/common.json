@@ -44,5 +44,10 @@
   "navbar_work": "Работы",
   "navbar_job_experience": "Опыт работы",
   "navbar_source_full_width": "Исходный код",
-  "navbar_source_mobile_width": "Просмотреть исходный код"
+  "navbar_source_mobile_width": "Просмотреть исходный код",
+  "lable_english": "Английский",
+  "lable_french": "Французский",
+  "lable_russian": "Русский",
+  "lable_japanese": "Японский",
+  "lable_portuguese": "Португальский"
 }
