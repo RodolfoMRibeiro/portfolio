@@ -3,44 +3,47 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import NextLink from 'next/link'
+import useTranslation from 'next-translate/useTranslation';
 
-const Work = () => (
-  <Layout title="Angolist">
+const Work = () => { 
+  const { t } = useTranslation('works/angolist');
+
+return ( 
+  <Layout title='Angolist'>
     <Container>
       <Title>
-        Angolist <Badge>IN DEVELOPMENT</Badge>
+        {t('title')} <Badge>{t('date')}</Badge>
       </Title>
       <P>
-        A mobile application designed to assist UI/UX designers in evaluating
-        their work based on Nielsen&apos;s heuristic principles.
+        {t('description')}
       </P>
       <P>
-        This application is still under development. You might need to wait a
-        little bit...
+      {t('developmentMessage')}
       </P>
       <List ml={4} my={4}>
         <ListItem>
-          <Meta>Platform</Meta>
-          <span>iOS/Android</span>
+          <Meta>{t('platform')}</Meta>
+          <span>{t('platformValue')}</span>
         </ListItem>
         <ListItem>
-          <Meta>Stack</Meta>
-          <span>React Native, Typescript, Node.js, Prisma</span>
+          <Meta>{t('stack')}</Meta>
+          <span>{t('stackValue')}</span>
         </ListItem>
         <ListItem>
-          <Meta>Git hub</Meta>
+          <Meta>{t('github')}</Meta>
           <Link
             as={NextLink}
             target="_blank"
             href="https://github.com/RodolfoMRibeiro/angolist-backend"
           >
-            Angolist
+            {t('githubLink')}
           </Link>
         </ListItem>
       </List>
-      <WorkImage src="/images/works/angolist.png" alt="Homepage" />
+      <WorkImage src="/images/works/angolist.png" alt={t('imageAlt')} />
     </Container>
   </Layout>
 )
+}
 
 export default Work

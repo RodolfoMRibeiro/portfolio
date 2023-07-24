@@ -1,8 +1,12 @@
 module.exports = {
-    locales: ['en', 'ja', 'pt'], // Array with the languages that you want to use
-    defaultLocale: 'en', // Default language of your website
+    locales: ['en', 'ja', 'pt'],
+    defaultLocale: 'en',
     pages: {
-      '*': ['common'], // Namespaces that you want to import per page (we stick to one namespace for all the application in this tutorial)
+      '*': ['common'],
+      '/works/angolist': ['works/angolist'], 
+      '/works/ddos': ['works/ddos'], 
+      '/works/dsmovie': ['works/dsmovie'], 
+      '/works/keylogger': ['works/keylogger'], 
     },
   };
   
