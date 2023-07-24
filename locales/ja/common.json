@@ -44,5 +44,10 @@
   "navbar_work": "作品",
   "navbar_job_experience": "職務経験",
   "navbar_source_full_width": "ソースコード",
-  "navbar_source_mobile_width": "ソースを見る"
+  "navbar_source_mobile_width": "ソースを見る",
+  "lable_english": "英語",
+  "lable_french": "フランス語",
+  "lable_russian": "ロシア語",
+  "lable_japanese": "日本語",
+  "lable_portuguese": "ポルトガル語"
 }

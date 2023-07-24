@@ -44,5 +44,10 @@
   "navbar_work": "Trabalhos",
   "navbar_job_experience": "Experiência Profissional",
   "navbar_source_full_width": "Código-fonte",
-  "navbar_source_mobile_width": "Ver Código-fonte"
+  "navbar_source_mobile_width": "Ver Código-fonte",
+  "lable_english": "Inglês",
+  "lable_french": "Francês",
+  "lable_russian": "Russo",
+  "lable_japanese": "Japonês",
+  "lable_portuguese": "Português"
 }
