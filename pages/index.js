@@ -17,6 +17,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import Image from 'next/image'
+import useTranslation from 'next-translate/useTranslation'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop =>
@@ -32,6 +33,8 @@ const ProfileImage = chakra(Image, {
 })
 
 const Page = () => {
+  const { t } = useTranslation('common')
+
   return (
     <Layout>
       <Container>
@@ -42,15 +45,15 @@ const Page = () => {
           p={3}
           align="center"
         >
-          Hello, I&apos;m a full-cycle developer based in Brazil!
+          {t('hello')}
         </Box>
 
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Rodolfo M. Ribeiro
+              {t('name')}
             </Heading>
-            <p>Software Enginner | Cloud Associated</p>
+            <p>{t('title')}</p>
           </Box>
           <Box
             flexShrink={0}
@@ -73,18 +76,9 @@ const Page = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            Work
+            {t('work')}
           </Heading>
-          <Paragraph>
-            Rodolfo is a full-cycle software engineer and cloud associate based
-            in Brazil, with a passion for building scalable and reliable
-            systems. He possesses a strong background in developing,
-            maintaining, and deploying payment systems and programs. When
-            he&apos;s not online, he enjoys reading a wide range of books, from
-            captivating RPGs to informative technical literature. Currently, his
-            focus lies in exploring cloud solutions and their practical
-            applications in solving real-life problems.
-          </Paragraph>
+          <Paragraph>{t('work_description')}</Paragraph>
           <Box align="center" my={4}>
             <Button
               as={NextLink}
@@ -93,53 +87,42 @@ const Page = () => {
               rightIcon={<ChevronRightIcon />}
               colorScheme="teal"
             >
-              My portfolio
+              {t('portfolio')}
             </Button>
           </Box>
         </Section>
         <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
-            Bio
+            {t('bio')}
           </Heading>
           <BioSection>
             <BioYear>2003</BioYear>
-            Born in Ituverava, Brazil.
+            {t('born')}
           </BioSection>
           <BioSection>
             <BioYear>2021</BioYear>
-            Started a formal education as a software enginner at the University
-            of Franca (Uni-FACEF).
+            {t('education')}
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
-            Started working as a PHP software engineer intern at a prestigious
-            E-commerce company called{' '}
-            <Link href="https://www.irroba.com.br" target="_blank">
-              Irroba
-            </Link>
+            {t('irroba')}
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
-            Started working as a Golang Software Engineer at{' '}
-            <Link href="https://quero2pay.com.br/" target="_blank">
-              Q2Bank
-            </Link>
-            , where he developed a deep passion for Cloud Solutions and DevOps.
+            {t('q2bank')}
           </BioSection>
         </Section>
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            I ♥
+            {t('hobbies')}
           </Heading>
-          <Paragraph>
-            Reading, Playing Games, Music, Learn Languages (Currently Japanese)
-          </Paragraph>
+          <Paragraph>{t('hobbies_description')}</Paragraph>
         </Section>
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            On the web
+            {t('web')}
           </Heading>
           <List>
             <ListItem>
@@ -149,7 +132,7 @@ const Page = () => {
                   colorScheme="teal"
                   leftIcon={<IoLogoGithub />}
                 >
-                  @RodolfoMRibeiro
+                  {t('github')}
                 </Button>
               </Link>
             </ListItem>
@@ -163,19 +146,16 @@ const Page = () => {
                   colorScheme="teal"
                   leftIcon={<IoLogoLinkedin />}
                 >
-                  @RodolfoMRibeiro
+                  {t('linkedin')}
                 </Button>
               </Link>
             </ListItem>
           </List>
 
           <Heading as="h3" variant="section-title">
-            An Invite to you
+            {t('invite')}
           </Heading>
-          <p>
-            Why don&apos;t you join me on a behind-the-scenes coding journey?
-            Give me a shout and let&apos;s talk!
-          </p>
+          <p>{t('invite_description')}</p>
 
           <Box align="center" my={4}>
             <Button
@@ -185,7 +165,7 @@ const Page = () => {
               leftIcon={<EmailIcon />}
               colorScheme="teal"
             >
-              Send me a message
+              {t('send_message')}
             </Button>
           </Box>
         </Section>

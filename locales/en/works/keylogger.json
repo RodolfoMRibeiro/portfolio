@@ -1,0 +1,14 @@
+{
+  "title": "KeySense",
+  "date": "2023-2023",
+  "description": "A windows-based application that runs in stealth mode and gets keystrokes from any keyboard.",
+  "logInfo": "All the log information will be saved to a file in a given path.",
+  "quote": "\"I wholeheartedly embrace the ethos of open source code and the spirit of knowledge sharing, with the sincere hope that it is wielded for good and never misused\" - Rodolfo Marques",
+  "platform": "Platform",
+  "platformValue": "Windows",
+  "stack": "Stack",
+  "stackValue": "C++, Windows API, DLL",
+  "github": "GitHub",
+  "githubLink": "Keylogger",
+  "imageAlt": "Homepage"
+}

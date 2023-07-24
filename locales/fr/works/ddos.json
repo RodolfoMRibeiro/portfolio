@@ -1,0 +1,13 @@
+{
+  "title": "Distributed Denial of Service (DDoS)",
+  "date": "2023-2023",
+  "description": "Une application en ligne de commande pour effectuer des attaques DDoS (Distributed Denial of Service) sur une page web donnée avec un nombre de threads simultanés.",
+  "quote": "\"J'adhère pleinement à l'éthique du code source ouvert et à l'esprit du partage des connaissances, avec l'espoir sincère qu'il sera utilisé à bon escient et jamais détourné de son but\" - Rodolfo Marques",
+  "platform": "Plateforme",
+  "platformValue": "Linux, Windows, Macintosh",
+  "stack": "Technologies",
+  "stackValue": "Golang",
+  "github": "GitHub",
+  "githubLink": "DDOS-FLOOD",
+  "imageAlt": "Page d'accueil"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Distributed Denial of Service (DDoS)",
+  "date": "2023-2023",
+  "description": "Консольное приложение для выполнения DDoS-атак (Distributed Denial of Service) на указанную веб-страницу с заданным количеством параллельных потоков.",
+  "quote": "\"Я от всей души разделяю этику открытого программного кода и дух обмена знаний, с искренней надеждой, что это будет использовано для добра и никогда не будет злоупотреблено\" - Родольфо Маркес",
+  "platform": "Платформа",
+  "platformValue": "Linux, Windows, Macintosh",
+  "stack": "Стек",
+  "stackValue": "Golang",
+  "github": "GitHub",
+  "githubLink": "DDOS-FLOOD",
+  "imageAlt": "Главная страница"
+}

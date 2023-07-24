@@ -1,0 +1,13 @@
+{
+  "title": "Dev Superior Movie (DSMovie)",
+  "date": "2022-2023",
+  "description": "Um aplicativo web de classificação de filmes para salvar opiniões e comentários dos usuários e classificar filmes de acordo com eles. Feito com Spring Boot e React TypeScript.",
+  "closingMessage": "Este site foi encerrado. Agradecemos a todos que apoiaram!",
+  "platform": "Plataforma",
+  "platformValue": "Web",
+  "stack": "Tecnologias",
+  "stackValue": "Java Spring Boot, React, TypeScript",
+  "github": "GitHub",
+  "githubLink": "DSMovie",
+  "imageAlt": "Página Inicial"
+}

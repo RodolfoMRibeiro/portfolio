@@ -11,48 +11,44 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import Blockquote from '../../components/blockquote'
 import NextLink from 'next/link'
+import useTranslation from 'next-translate/useTranslation'
 
-const Work = () => (
-  <Layout title="Keylogger">
-    <Container>
-      <Title>
-        Windows Keylogger <Badge>IN DEVELOPMENT</Badge>
-      </Title>
-      <P>
-        A windows-based application that runs in stealth mode and get keystrokes
-        from any keyboard.
-      </P>
-      <P>All the log information will be saved to a file in a given path.</P>
-      <Blockquote style={{ color: useColorModeValue('#444', '#888') }}>
-        <p>
-          &quot;I wholeheartedly embrace the ethos of open source code and the
-          spirit of knowledge sharing, with the sincere hope that it is wielded
-          for good and never misused&quot; - Rodolfo Marques
-        </p>
-      </Blockquote>
-      <List ml={4} my={4}>
-        <ListItem>
-          <Meta>Platform</Meta>
-          <span>Windows</span>
-        </ListItem>
-        <ListItem>
-          <Meta>Stack</Meta>
-          <span>Golang, Windows API, DLL</span>
-        </ListItem>
-        <ListItem>
-          <Meta>Git hub</Meta>
-          <Link
-            as={NextLink}
-            target="_blank"
-            href="https://github.com/RodolfoMRibeiro/Keylogger"
-          >
-            Keylogger
-          </Link>
-        </ListItem>
-      </List>
-      <WorkImage src="/images/works/keylogger.png" alt="Homepage" />
-    </Container>
-  </Layout>
-)
-
+const Work = () => {
+  const { t } = useTranslation('works/keylogger')
+  return (
+    <Layout title="Keylogger">
+      <Container>
+        <Title>
+          {t('title')} <Badge>{t('date')}</Badge>
+        </Title>
+        <P>{t('description')}</P>
+        <P>{t('logInfo')}</P>
+        <Blockquote style={{ color: useColorModeValue('#444', '#888') }}>
+          <p>{t('quote')}</p>
+        </Blockquote>
+        <List ml={4} my={4}>
+          <ListItem>
+            <Meta>{t('platform')}</Meta>
+            <span>{t('platformValue')}</span>
+          </ListItem>
+          <ListItem>
+            <Meta>{t('stack')}</Meta>
+            <span>{t('stackValue')}</span>
+          </ListItem>
+          <ListItem>
+            <Meta>{t('github')}</Meta>
+            <Link
+              as={NextLink}
+              target="_blank"
+              href="https://github.com/RodolfoMRibeiro/KeySense"
+            >
+              {t('githubLink')}
+            </Link>
+          </ListItem>
+        </List>
+        <WorkImage src="/images/works/keylogger.png" alt={t('imageAlt')} />
+      </Container>
+    </Layout>
+  )
+}
 export default Work

@@ -18,6 +18,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
+import useTranslation from 'next-translate/useTranslation'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -43,6 +44,7 @@ const MenuLink = forwardRef((props, ref) => (
 ))
 
 const Navbar = props => {
+  const { t } = useTranslation('common')
   const { path } = props
 
   return (
@@ -78,10 +80,10 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+            {t('navbar_work')}
           </LinkItem>
           <LinkItem href="/job-experience" path={path}>
-            Job Experience
+            {t('navbar_job_experience')}
           </LinkItem>
           <LinkItem
             target="_blank"
@@ -93,7 +95,7 @@ const Navbar = props => {
             pl={2}
           >
             <IoLogoGithub />
-            Source
+            {t('navbar_source_full_width')}
           </LinkItem>
         </Stack>
 
@@ -110,19 +112,19 @@ const Navbar = props => {
               />
               <MenuList>
                 <MenuItem as={MenuLink} href="/">
-                  About
+                  {t('navbar_about')}
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/works">
-                  Works
+                  {t('navbar_work')}
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/job-experience">
-                  Job Experience
+                  {t('navbar_job_experience')}
                 </MenuItem>
                 <MenuItem
                   as={Link}
                   href="https://github.com/RodolfoMRibeiro/portfolio"
                 >
-                  View Source
+                  {t('navbar_source_mobile_width')}
                 </MenuItem>
               </MenuList>
             </Menu>
