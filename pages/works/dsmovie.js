@@ -3,44 +3,47 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import NextLink from 'next/link'
+import useTranslation from 'next-translate/useTranslation';
 
-const Work = () => (
+const Work = () =>{ 
+  const {t} = useTranslation('works/dsmovie')
+
+return (
   <Layout title="DSMovie">
     <Container>
       <Title>
-        Dev Superior Movie (DSMovie) <Badge>2022-2023</Badge>
+      {t('title')} <Badge>{t('date')}</Badge>
       </Title>
       <P>
-        A movie-classification web app to save users&apos; opnions, comments and
-        classify movies according to then. Made with spring boot and react
-        typescript.
+      {t('description')}
       </P>
       <P>
-        This site has been closed. Thank you for everybody that supported that!
+      {t('closingMessage')}
       </P>
       <List ml={4} my={4}>
         <ListItem>
-          <Meta>Platform</Meta>
-          <span>Web</span>
+          <Meta>{t('platform')}</Meta>
+          <span>{t('platformValue')}</span>
         </ListItem>
         <ListItem>
-          <Meta>Stack</Meta>
-          <span>Java Spring Boot, React, Typescript</span>
+          <Meta>{t('stack')}</Meta>
+          <span>{t('stackValue')}</span>
         </ListItem>
         <ListItem>
-          <Meta>Git hub</Meta>
+          <Meta>{t('gihub')}</Meta>
           <Link
             as={NextLink}
             target="_blank"
             href="https://github.com/RodolfoMRibeiro/DSMOVIE"
           >
-            DSMovie
+            {t('githubLink')}
           </Link>
         </ListItem>
       </List>
-      <WorkImage src="/images/works/dsmovie.png" alt="Homepage" />
+      <WorkImage src="/images/works/dsmovie.png" alt={t('imageAlt')} />
     </Container>
   </Layout>
 )
+}
 
 export default Work
