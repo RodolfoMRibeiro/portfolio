@@ -8,17 +8,25 @@ import {
   MenuButton,
   IconButton
 } from '@chakra-ui/react'
+import useTranslation from 'next-translate/useTranslation'
 
 const TranslationButton = () => {
+  const { t } = useTranslation('common')
   const router = useRouter()
 
   const handleLanguageChange = locale => {
     router.push(router.pathname, router.asPath, { locale })
   }
-  // const languages = [{lang: 'en', lable: t('lable_english')}, {lang: 'ru', lable: t('lable_russian')}]
+  const languages = [
+    { lang: 'fr', lable: t('lable_french') },
+    { lang: 'en', lable: t('lable_english') },
+    { lang: 'ru', lable: t('lable_russian') },
+    { lang: 'ja', lable: t('lable_japanese') },
+    { lang: 'pt', lable: t('lable_portuguese') },
+  ]
 
   return (
-    <Box mr={2} display={{ base: 'inline-block'}}>
+    <Box mr={2} display={{ base: 'inline-block' }}>
       <Menu>
         <MenuButton
           as={IconButton}
@@ -27,12 +35,14 @@ const TranslationButton = () => {
           aria-label="Options"
         />
         <MenuList>
-          <MenuItem onClick={() => handleLanguageChange('pt')}>
-            portugues
-          </MenuItem>
-          <MenuItem onClick={() => handleLanguageChange('ru')}>
-            russo
-          </MenuItem>
+          {languages.map(language => (
+            <MenuItem
+              key={language.lable}
+              onClick={() => handleLanguageChange(language.lang)}
+            >
+              {language.lable}
+            </MenuItem>
+          ))}
         </MenuList>
       </Menu>
     </Box>

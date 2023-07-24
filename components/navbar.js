@@ -100,7 +100,7 @@ const Navbar = props => {
           </LinkItem>
         </Stack>
 
-        <Box flex={2} align="right" >
+        <Box flex={2} align="right">
           <TranslationButton />
           <ThemeToggleButton />
 
