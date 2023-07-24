@@ -39,5 +39,10 @@
   "irroba_accomplishment_2": "Through reorganizing and streamlining delivery methods on the platform, I deepened my understanding of the key elements that truly add value to the company.",
   "not_found": "Not found",
   "not_found_description": "The page you're looking for was not found.",
-  "return_home": "Return to home"
+  "return_home": "Return to home",
+  "navbar_about": "About",
+  "navbar_work": "Works",
+  "navbar_job_experience": "Job Experience",
+  "navbar_source_full_width": "Source",
+  "navbar_source_mobile_width": "View Source"
 }

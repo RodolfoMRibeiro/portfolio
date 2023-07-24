@@ -39,5 +39,10 @@
   "irroba_accomplishment_2": "Através da reorganização e otimização dos métodos de entrega na plataforma, aprofundou a compreensão dos elementos-chave que realmente agregam valor à empresa.",
   "not_found": "Não encontrado",
   "not_found_description": "A página que você está procurando não foi encontrada.",
-  "return_home": "Retornar à página inicial"
+  "return_home": "Retornar à página inicial",
+  "navbar_about": "Sobre",
+  "navbar_work": "Trabalhos",
+  "navbar_job_experience": "Experiência Profissional",
+  "navbar_source_full_width": "Código-fonte",
+  "navbar_source_mobile_width": "Ver Código-fonte"
 }

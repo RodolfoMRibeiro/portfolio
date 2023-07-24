@@ -39,5 +39,10 @@
   "irroba_accomplishment_2": "Par la réorganisation et l'optimisation des méthodes de livraison sur la plateforme, il a approfondi sa compréhension des éléments clés qui apportent réellement de la valeur à l'entreprise.",
   "not_found": "Non trouvé",
   "not_found_description": "La page que vous recherchez est introuvable.",
-  "return_home": "Retourner à la page d'accueil"
+  "return_home": "Retourner à la page d'accueil",
+  "navbar_about": "À propos",
+  "navbar_work": "Travaux",
+  "navbar_job_experience": "Expérience Professionnelle",
+  "navbar_source_full_width": "Code Source",
+  "navbar_source_mobile_width": "Voir le Code Source"
 }

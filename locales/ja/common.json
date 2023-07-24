@@ -39,5 +39,10 @@
   "irroba_accomplishment_2": "プラットフォームの配送方法を再編成し、最適化することにより、企業への価値をより深く理解しました。",
   "not_found": "見つかりません",
   "not_found_description": "お探しのページが見つかりませんでした。",
-  "return_home": "ホームに戻る"
+  "return_home": "ホームに戻る",
+  "navbar_about": "について",
+  "navbar_work": "作品",
+  "navbar_job_experience": "職務経験",
+  "navbar_source_full_width": "ソースコード",
+  "navbar_source_mobile_width": "ソースを見る"
 }
