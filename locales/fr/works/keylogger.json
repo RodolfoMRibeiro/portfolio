@@ -1,0 +1,14 @@
+{
+    "title": "KeySense",
+    "date": "2023-2023",
+    "description": "Une application pour Windows qui fonctionne en mode furtif et récupère les frappes de n'importe quel clavier.",
+    "logInfo": "Toutes les informations de journalisation seront enregistrées dans un fichier à l'emplacement spécifié.",
+    "quote": "\"J'adhère pleinement à l'éthique du code source ouvert et à l'esprit du partage des connaissances, avec l'espoir sincère qu'il sera utilisé à bon escient et jamais détourné de son but\" - Rodolfo Marques",
+    "platform": "Plateforme",
+    "platformValue": "Windows",
+    "stack": "Technologies",
+    "stackValue": "C++, Windows API, DLL",
+    "github": "GitHub",
+    "githubLink": "Keylogger",
+    "imageAlt": "Page d'accueil"
+}
